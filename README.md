@@ -1,33 +1,32 @@
-
 <p align="center">
   <img src="https://user-images.githubusercontent.com/554369/234892488-856f9da7-7b82-4429-ac35-0d0545bf0d24.png"  width="300" align="center"/>
 </p>
 
 [![Discord](https://img.shields.io/discord/1026214085173461072)](https://discord.gg/Enf6Z3qhVr)
 
-
-
 # Frogmouth
 
+Frogmouth is a Markdown viewer / browser for your terminal, built with
+[Textual](https://github.com/Textualize/textual).
 
-Frogmouth is a Markdown viewer / browser for your terminal, built with [Textual](https://github.com/Textualize/textual).
+Frogmouth can open `*.md` files locally or via a URL. There is a familiar browser-like navigation
+stack, history, bookmarks, and table of contents.
 
-Frogmouth can open `*.md` files locally or via a URL.
-There is a familiar browser-like navigation stack, history, bookmarks, and table of contents.
+> [!NOTE]
+>
+> This repository is a temporary, maintained fork of Frogmouth. Its purpose is to continue
+> development and resolve issues that currently block usability. The fork exists independently for
+> now but the intent is eventual upstreaming rather than fragmentation.
 
-<details>  
+<details>
   <summary> 🎬 Demonstration </summary>
   <hr>
 
 A quick video tour of Frogmouth.
 
-
-
-
 https://user-images.githubusercontent.com/554369/235305502-2699a70e-c9a6-495e-990e-67606d84bbfa.mp4
 
 (thanks [Screen Studio](https://www.screen.studio/))
-
 
 </details>
 
@@ -59,25 +58,38 @@ https://user-images.githubusercontent.com/554369/235305502-2699a70e-c9a6-495e-99
 
 </table>
 
-
 ## Compatibility
 
-Frogmouth runs on Linux, macOS, and Windows. Frogmouth requires Python **3.8** or above.
-
+Frogmouth runs on Linux, macOS, and Windows. Frogmouth requires Python **3.10** or above.
 
 ## Installing
 
-The easiest way to install Frogmouth is with [pipx](https://pypa.github.io/pipx/) (particularly if you aren't a Python developer).
+The easiest way to install Frogmouth is with [pipx](https://pypa.github.io/pipx/) (particularly if
+you aren't a Python developer).
 
 ```
-pipx install frogmouth
+pipx install frogmouth-ns
 ```
 
 You can also install Frogmouth with `pip`:
 
 ```
-pip install frogmouth
+pip install frogmouth-ns
 ```
+
+> [!IMPORTANT]
+>
+> This package installs the `frogmouth` command. If you have the original Frogmouth installed,
+> uninstall it first.
+
+> [!NOTE]
+>
+> Homebrew support is not currently provided. If there is sufficient demand, a Homebrew formula may
+> be added in the future. For now, installation is supported via PyPI only.
+
+<details>
+
+<summary>Homebrew</summary>
 
 On systems using Homebrew, you can tap into the Textualize tap and install Frogmouth with `brew`:
 
@@ -85,6 +97,8 @@ On systems using Homebrew, you can tap into the Textualize tap and install Frogm
 brew tap textualize/homebrew
 brew install frogmouth
 ```
+
+</details>
 
 Whichever method you use, you should have a `frogmouth` command on your path.
 
@@ -96,21 +110,22 @@ Enter `frogmouth` at the prompt to run the app, optionally followed by a path to
 frogmouth README.md
 ```
 
-You can navigate with the mouse or the keyboard.
-Use <kbd>tab</kbd> and <kbd>shift</kbd>+<kbd>tab</kbd> to navigate between the various controls on screen.
+You can navigate with the mouse or the keyboard. Use <kbd>tab</kbd> and
+<kbd>shift</kbd>+<kbd>tab</kbd> to navigate between the various controls on screen.
 
 ## Features
 
-You can load README files direct from GitHub repositories with the `gh` command.
-Use the following syntax:
+You can load README files direct from GitHub repositories with the `gh` command. Use the following
+syntax:
 
 ```
 frogmouth gh textualize/textual
 ```
 
-This also works with the address bar in the app.
-See the help (<kbd>F1</kbd>) in the app for details.
+This also works with the address bar in the app. See the help (<kbd>F1</kbd>) in the app for
+details.
 
-## Follow this project
+## Follow this Project
 
-If this app interests you, you may want to join the Textual [Discord server](https://discord.gg/Enf6Z3qhVr).
+If this app interests you, you may want to join the Textual
+[Discord server](https://discord.gg/Enf6Z3qhVr).
